@@ -1,0 +1,1 @@
+# azure-web-static-with-terraform
