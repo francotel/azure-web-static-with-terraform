@@ -17,39 +17,44 @@ resource "azurerm_cdn_frontdoor_rule_set" "cache" {
   cdn_frontdoor_profile_id = azurerm_cdn_frontdoor_profile.fd-profile.id
 }
 
-# resource "azurerm_cdn_frontdoor_rule" "cache" {
-#   depends_on = [
-#     azurerm_cdn_frontdoor_origin_group.web,
-#     azurerm_cdn_frontdoor_origin.web
-#   ]
-#   name                      = "static"
-#   cdn_frontdoor_rule_set_id = azurerm_cdn_frontdoor_rule_set.cache.id
-#   order                     = 1
-#   behavior_on_match         = "Stop"
-#   conditions {
-#     url_file_extension_condition {
-#       operator     = "Equal"
-#       match_values = ["css", "js", "ico", "png", "jpeg", "jpg", ".map"]
-#     }
-#   }
-#   actions {
-#     route_configuration_override_action {
-#       compression_enabled = true
-#       cache_behavior      = "HonorOrigin"
-#     }
-#   }
-# }
+resource "azurerm_cdn_frontdoor_origin_group" "web" {
+  name                     = "web"
+  cdn_frontdoor_profile_id = azurerm_cdn_frontdoor_profile.fd-profile.id
 
-# resource "azurerm_cdn_frontdoor_origin_group" "web" {
-#   name                     = "web"
-#   cdn_frontdoor_profile_id = azurerm_cdn_frontdoor_profile.this.id
+  load_balancing {
+    additional_latency_in_milliseconds = 0
+    sample_size                        = 16
+    successful_samples_required        = 3
+  }
+}
 
-#   load_balancing {
-#     additional_latency_in_milliseconds = 0
-#     sample_size                        = 16
-#     successful_samples_required        = 3
-#   }
-# }
+resource "azurerm_cdn_frontdoor_rule" "cache" {
+  name                      = "static"
+  cdn_frontdoor_rule_set_id = azurerm_cdn_frontdoor_rule_set.cache.id
+  order                     = 1
+  behavior_on_match         = "Stop"
+
+  conditions {
+    url_file_extension_condition {
+      operator     = "Equal"
+      match_values = ["css", "js", "ico", "png", "jpeg", "jpg", ".map"]
+    }
+  }
+
+  actions {
+    route_configuration_override_action {
+      compression_enabled = true
+      cache_behavior      = "HonorOrigin"
+    }
+  }
+
+  depends_on = [
+    azurerm_cdn_frontdoor_origin_group.web,
+    azurerm_cdn_frontdoor_origin.web
+  ]
+}
+
+
 
 # resource "azurerm_cdn_frontdoor_origin" "web" {
 #   depends_on                     = [azurerm_storage_account.web]
