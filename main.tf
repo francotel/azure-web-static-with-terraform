@@ -50,6 +50,8 @@ resource "azurerm_storage_blob" "index" {
   type                   = "Block"
   source                 = "${path.module}/src/index.html"
   content_type           = "text/html"
+
+  depends_on = [azurerm_storage_account.web]
 }
 
 resource "azurerm_storage_blob" "error" {
@@ -59,4 +61,6 @@ resource "azurerm_storage_blob" "error" {
   type                   = "Block"
   source                 = "${path.module}/src/404.html"
   content_type           = "text/html"
+
+  depends_on = [azurerm_storage_account.web]
 }
