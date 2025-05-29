@@ -1,9 +1,66 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36" version="27.1.1">
   <diagram name="Page-1" id="5Bl78gGiRsfVYB4v5vAa">
-    <mxGraphModel dx="1485" dy="1080" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1485" dy="680" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" background="#000000" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="PPb8_8hUJsLYVDpdxPQs-27" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#000000;strokeColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="179" y="509" width="935" height="400" as="geometry" />
+        </mxCell>
+        <mxCell id="PPb8_8hUJsLYVDpdxPQs-5" value="Browser" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/app_services/App_Service_Domains.svg;labelBackgroundColor=none;fontColor=#FFFFFF;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="349" y="685.5" width="68" height="55.00000000000001" as="geometry" />
+        </mxCell>
+        <mxCell id="PPb8_8hUJsLYVDpdxPQs-6" value="Azure Storage" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/storage/Storage_Accounts.svg;labelBackgroundColor=none;fontColor=#FFFFFF;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="840" y="681" width="65" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="PPb8_8hUJsLYVDpdxPQs-7" value="index.html" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#00BEF2;shape=mxgraph.azure.storage_blob;fontColor=#FFFFFF;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1031" y="627" width="50" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="PPb8_8hUJsLYVDpdxPQs-8" value="404.html" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#00BEF2;shape=mxgraph.azure.storage_blob;fontColor=#FFFFFF;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1031" y="755" width="50" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="PPb8_8hUJsLYVDpdxPQs-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.985;entryY=0.346;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=#FFFFFF;strokeWidth=2;" edge="1" parent="1" source="PPb8_8hUJsLYVDpdxPQs-7" target="PPb8_8hUJsLYVDpdxPQs-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PPb8_8hUJsLYVDpdxPQs-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.731;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=2;strokeColor=#FFFFFF;" edge="1" parent="1" source="PPb8_8hUJsLYVDpdxPQs-8" target="PPb8_8hUJsLYVDpdxPQs-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PPb8_8hUJsLYVDpdxPQs-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#FFFFFF;strokeWidth=2;" edge="1" parent="1" source="PPb8_8hUJsLYVDpdxPQs-12" target="PPb8_8hUJsLYVDpdxPQs-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PPb8_8hUJsLYVDpdxPQs-12" value="&lt;span&gt;Azure Front Door&lt;/span&gt;" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/networking/Front_Doors.svg;labelBackgroundColor=none;fontColor=#FFFFFF;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="666" y="677" width="68" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PPb8_8hUJsLYVDpdxPQs-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#FFFFFF;" edge="1" parent="1" source="PPb8_8hUJsLYVDpdxPQs-21" target="PPb8_8hUJsLYVDpdxPQs-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="202.5" y="687" as="sourcePoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PPb8_8hUJsLYVDpdxPQs-21" value="Users" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/identity/Users.svg;labelBackgroundColor=none;fontColor=#FFFFFF;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="215" y="678" width="64" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="PPb8_8hUJsLYVDpdxPQs-22" value="R53&lt;div&gt;Domain&lt;/div&gt;" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#FFFFFF;fillColor=#8C4FFF;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=1;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.route_53;" vertex="1" parent="1">
+          <mxGeometry x="487" y="674" width="78" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="PPb8_8hUJsLYVDpdxPQs-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;labelBackgroundColor=none;strokeColor=#FFFFFF;strokeWidth=2;" edge="1" parent="1" source="PPb8_8hUJsLYVDpdxPQs-5" target="PPb8_8hUJsLYVDpdxPQs-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PPb8_8hUJsLYVDpdxPQs-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.015;entryY=0.6;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=#FFFFFF;strokeWidth=2;" edge="1" parent="1" source="PPb8_8hUJsLYVDpdxPQs-22" target="PPb8_8hUJsLYVDpdxPQs-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PPb8_8hUJsLYVDpdxPQs-26" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="446.63" y="935" width="399.74" height="74" as="geometry" />
+        </mxCell>
+        <mxCell id="PPb8_8hUJsLYVDpdxPQs-4" value="" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/other/Azure_A.svg;" vertex="1" parent="PPb8_8hUJsLYVDpdxPQs-26">
+          <mxGeometry x="99" y="4.940000000000055" width="68" height="64.12" as="geometry" />
+        </mxCell>
+        <mxCell id="PPb8_8hUJsLYVDpdxPQs-19" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://crosscloudx.com/wp-content/uploads/2024/05/logo-header-v2-3.png;" vertex="1" parent="PPb8_8hUJsLYVDpdxPQs-26">
+          <mxGeometry x="192" y="4.039999999999964" width="207.74" height="65.92" as="geometry" />
+        </mxCell>
+        <mxCell id="PPb8_8hUJsLYVDpdxPQs-20" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://static-00.iconduck.com/assets.00/terraform-icon-1803x2048-hodrzd3t.png;" vertex="1" parent="PPb8_8hUJsLYVDpdxPQs-26">
+          <mxGeometry width="65.12" height="74" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
