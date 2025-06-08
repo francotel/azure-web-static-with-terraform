@@ -66,6 +66,9 @@
         <mxCell id="PPb8_8hUJsLYVDpdxPQs-20" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://static-00.iconduck.com/assets.00/terraform-icon-1803x2048-hodrzd3t.png;" vertex="1" parent="PPb8_8hUJsLYVDpdxPQs-26">
           <mxGeometry width="65.12" height="74" as="geometry" />
         </mxCell>
+        <mxCell id="PPb8_8hUJsLYVDpdxPQs-29" value="Static Website through Storage Account and Azure Front Door" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FFFFFF;fontStyle=1;fontSize=25;" vertex="1" parent="1">
+          <mxGeometry x="253.5" y="448" width="786" height="61" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
