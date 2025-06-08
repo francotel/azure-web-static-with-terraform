@@ -67,7 +67,7 @@
           <mxGeometry width="65.12" height="74" as="geometry" />
         </mxCell>
         <mxCell id="PPb8_8hUJsLYVDpdxPQs-29" value="Static Website through Storage Account and Azure Front Door" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FFFFFF;fontStyle=1;fontSize=25;" vertex="1" parent="1">
-          <mxGeometry x="253.5" y="448" width="786" height="61" as="geometry" />
+          <mxGeometry x="253.5" y="447" width="786" height="61" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
